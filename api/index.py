@@ -8,7 +8,7 @@ def index():
     return {'message': 'server working'}
 
 
-@app.route('/', methods=['POST'])
+@app.route('/predictdiease')
 def predict():
     reqbody = json.loads(request.data)
     symptoms = []
