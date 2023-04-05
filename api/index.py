@@ -1,9 +1,9 @@
 from flask import Flask, app, request, json
-from ml.model import *
+# from ml.model import *
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def index():
     return {'message': 'server working'}
 
